@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -30,18 +30,18 @@
             <li>
                 <a href="#projects">Projects</a>
             </li>
-            <!-- <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li> -->
             <li>
                 <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            <!-- <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li> -->
         </ul>
     </header>
     <!-- End header -->
@@ -53,7 +53,7 @@
             <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
             <img id="lead-pic"
                 src="images/profile-pic.JPG"
-                style="width: 30%; border-radius: 20%;"
+                style="margin-top: 25px; width: 30%; border-radius: 30px;"
             />
         </div>
         <!-- End #lead-content -->
@@ -69,7 +69,7 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
+    <!-- <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -78,7 +78,7 @@
                 <div class="col-md-8">
                     <p>
                         The seeds of my software engineering journey were planted when I took an introductory programming course in college.
-                        I was on a different trajectory, one that led me to rewarding years in Japan. But destined to return to this path,
+                        I was on a different trajectory, one that led me to rewarding years overseas. But destined to return to this path,
                         I dived head-first into this exciting lifelong career. Developing my skill set through intense comprehensive training,
                         graduating from the highly-regarded App Academy, I am now creating full stack web applications while growing my expertise
                         every day.
@@ -86,8 +86,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End #about -->
+
+    <div id="about" class="optional-section" style="border-top: none;">
+        <h2 class="heading">About Me</h2>
+        <div class="optional-section-block" style="border: none;">
+            <p style="font-size: 16px">
+                The seeds of my software engineering journey were planted when I took an introductory programming course in college.
+                I was on a different trajectory, one that led me to rewarding years overseas. But destined to return to this path,
+                I dived head-first into this exciting lifelong career. Developing my skill set through intense comprehensive training,
+                graduating from the highly-regarded App Academy, I am now creating full stack web applications while growing my expertise
+                every day.
+            </p>
+        </div>
+        <!-- End .optional-section-block -->
+    </div>
+    <!-- End .optional-section -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -99,11 +114,20 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Astro</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        <h3 style="padding-left: 50px; text-align: left; font-weight: bold;">
+                            Astro
+                        </h3>
+                        <h4 style="margin-top: -15px; padding-left: 50px; text-align: left; font-family: Lato, sans-serif; font-weight: 400; color: grey;">
+                            E-commerce
+                        </h4>
+                        <p style="padding-left: 50px; color: black;">
+                            An e-commerce site with an interstellar theme.
                         </p>
-                        <a href="#">View Project</a>
+                        <div style="margin-top: 40px; padding-left: 50px; display: flex;">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -115,11 +139,20 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Questlog</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        <h3 style="padding-left: 50px; text-align: left; font-weight: bold">
+                            Questlog
+                        </h3>
+                        <h4 style="margin-top: -15px; padding-left: 50px; text-align: left; font-family: Lato, sans-serif; font-weight: 400; color: grey;">
+                            Task manager
+                        </h4>
+                        <p style="padding-left: 50px; text-align: left; color: black;">
+                            A gamified to-do list to help you keep track of and complete your tasks, taking inspiration from Habitica.
                         </p>
-                        <a href="#">View Project</a>
+                        <div style="margin-top: 40px; padding-left: 50px; display: flex;">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -196,36 +229,48 @@
         <ul>
             <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <ul>
+            <li>Flask</li>
+            <li>Express</li>
             <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
+            <li>Redux</li>
+        </ul>
+        <ul>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+        </ul>
+        <ul>
             <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>SQLAlchemy</li>
+            <li>Sequelize</li>
+            <li>JSON</li>
+            <li>Postman</li>
+        </ul>
+        <ul>
+            <li>npm</li>
+            <li>Git</li>
+            <li>GitHub</li>
         </ul>
     </div>
     <!-- End #skills -->
 
     <div id="contact">
-        <h2>Get in Touch</h2>
+        <h2 style="font-size: 40px;">Get in Touch</h2>
+        <div style="margin: 40px 0; display: flex; justify-content: center; column-gap: 75px;">
+            <a href="https://github.com/ummjhall" target="_blank">
+                <i class="fa fa-github" style="font-size: 70px; color: black;" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/justin-hall-55175160" target="_blank">
+                <i class="fa fa-linkedin" style="font-size: 70px; color: white;" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:justinhall.jnh@gmail.com" target="_blank">
+                <i class="fa fa-envelope" style="font-size: 70px; color: orange;" aria-hidden="true"></i>
+            </a>
+        </div>
+
         <!-- <div id="contact-form">
             <form method="POST" action="https://formspree.io/justinhall.jnh@gmail.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
@@ -254,23 +299,16 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ummjhall" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/in/justin-hall-55175160" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="mailto:justinhall.jnh@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                         </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
+
+
                     </ul>
                 </div>
             </div>
